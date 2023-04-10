@@ -466,16 +466,23 @@
         </div>
 
         <!-- TODO ---------------- input ------------------------->
-        <div
-          role="group"
-          aria-labelledby="footer-subscribe"
-          class="footer-input"
-        >
+
+        <div class="footer-input">
           <p class="footer-icon-text">Subscribe</p>
-          <div class="footer-input-main">
-            <div class="input-container footer-margin">
+          <form class="footer-form">
+            <div
+              role="group"
+              aria-labelledby="footer-subscribe"
+              class="footer-input-main footer-margin"
+            >
               <label for="e-mail"></label>
-              <input type="email" placeholder="Email" id="e-mail" class="footer-input-style"/>
+              <input
+                type="email"
+                placeholder="E-mail"
+                id="e-mail"
+                class="footer-input-style"
+                name="Email"
+              />
             </div>
             <button type="submit" class="footer-button footer-margin">
               Subscribe
@@ -483,12 +490,13 @@
                 <use href="/images/icons.svg#ico-tg"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
+      is-hidden
       <div class="modal">
         <button type="button" class="modal-button" data-modal-close>
           <svg class="modal-svg">
@@ -500,6 +508,41 @@
             ></use>
           </svg>
         </button>
+
+        <div class="modal-format">
+          <h1 class="modal-titile">
+            Leave your contacts and we will call you back
+          </h1>
+
+          <form class="modal-form" name="customer-information">
+            <div role="group" aria-labelledby="name-details-modal">
+              <label for="user-name">Name</label>
+              <input type="text" name="user-name" />
+            </div>
+
+            <div role="group" aria-labelledby="tel-num-details-modal">
+              <label for="user-tel">Phone</label>
+              <input type="tel" name="user-tel" />
+            </div>
+
+            <div role="group" aria-labelledby="email-details-modal">
+              <label for="user-email">Email</label>
+              <input type="email" name="user-email" />
+            </div>
+
+            <div role="group" aria-labelledby="-modal">
+              <label for="">Comment</label>
+              <input type="text" name="comment" />
+            </div>
+
+            <!-- <div role="group" aria-labelledby="-modal">
+            <label for="confirmation"></label>
+            <input type="text" name="confirmation" />
+          </div>
+
+          <button type="submit">Send</button> -->
+          </form>
+        </div>
       </div>
     </div>
 

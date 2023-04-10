@@ -13,6 +13,13 @@
   --time-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 h1,
 h2,
 h3,
@@ -713,37 +720,52 @@ footer {
 .footer-icon-link:focus {
   background-color: #31d0aa;
 }
-
+.footer-form {
+  display: flex;
+}
 .footer-input {
   margin-left: 80px;
 }
 
 .footer-input-main {
   display: flex;
-}
 
-.footer-margin:not(:last-child){
-  margin-right: 16px;
-}
-
-.footer-input-style{
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  border: none;
-}
-
-.input-container{
-  display: flex;
-align-items: center;
+  align-items: center;
 
   width: 264px;
   height: 40px;
+}
 
-  border: 1px solid #FFFFFF;
+.footer-margin:not(:last-child) {
+  margin-right: 16px;
+}
+
+.footer-input-style {
+  width: 100%;
+  height: 100%;
+
+  padding: 16px 8px;
+
+  background-color: transparent;
+  color: #ffffff;
+
+  border: 1px solid #ffffff;
   border-radius: 4px;
 
-  
+  transition: border 250ms var(--time-function);
+}
+
+.footer-input-style::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.footer-input-style:focus {
+  border: 1px solid #4d5ae5;
 }
 
 .footer-button {
@@ -904,4 +926,21 @@ ul button[type='button'].btn:active {
   border: 1px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.modal-format{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 24px 0;
+
+}
+
+.modal-titile {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: inherit;
 }
