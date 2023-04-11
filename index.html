@@ -495,7 +495,6 @@
       </div>
     </footer>
 
-      
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-button" data-modal-close>
@@ -509,83 +508,96 @@
           </svg>
         </button>
 
-        <div class="modal-format">
-          <h1 class="modal-titile">
-            Leave your contacts and we will call you back
-          </h1>
+        <h1 class="modal-titile">
+          Leave your contacts and we will call you back
+        </h1>
 
-          <form class="modal-form" name="customer-information">
-            <div class="input-group">
-              <div
-                role="group"
-                aria-labelledby="name-details-modal"
-                class="modal-group"
-              >
-                <label for="user-name" class="modal-lable">Name</label>
+        <form class="modal-form" name="customer-information" autocomplete="on">
+          <ul class="input-group list">
+            <li class="modal-group">
+              <label for="user-name" class="modal-lable">Name</label>
 
-                <div class="div-input-ico">
-                  <input type="text" name="user-name" class="modal-input" />
-                  <svg class="modal-icon-input" height="24" width="18">
-                    <use href="./images/icons.svg#name"></use>
-                  </svg>
-                </div>
+              <div class="div-input-ico">
+                <input
+                  type="text"
+                  name="user-name"
+                  class="modal-input valid"
+                  autofocus
+                  placeholder=" "
+                />
+
+                <svg class="modal-icon-input" height="24" width="18">
+                  <use href="./images/icons.svg#name"></use>
+                </svg>
               </div>
+            </li>
 
-              <div
-                role="group"
-                aria-labelledby="telnum-details-modal"
-                class="modal-group"
-              >
-                <label for="user-tel" class="modal-lable">Phone</label>
-                <div class="div-input-ico">
-                  <input type="email" name="user-email" class="modal-input" />
-                  <svg class="modal-icon-input" height="24" width="18">
-                    <use href="./images/icons.svg#tel"></use>
-                  </svg>
-                </div>
+            <li class="modal-group">
+              <label for="user-tel" class="modal-lable">Phone</label>
+              <div class="div-input-ico">
+                <input
+                  type="tel"
+                  name="user-tel"
+                  class="modal-input valid"
+                  placeholder=" "
+                />
+                <svg class="modal-icon-input" height="24" width="18">
+                  <use href="./images/icons.svg#tel"></use>
+                </svg>
               </div>
+            </li>
 
-              <div
-                role="group"
-                aria-labelledby="email-details-modal"
-                class="modal-group"
-              >
-                <label for="user-email" class="modal-lable">Email</label>
-                <div class="div-input-ico">
-                  <input type="email" name="user-email" class="modal-input" />
-                  <svg class="modal-icon-input" height="24" width="18">
-                    <use href="./images/icons.svg#email"></use>
-                  </svg>
-                </div>
+            <li class="modal-group">
+              <label for="user-email" class="modal-lable">Email</label>
+              <div class="div-input-ico">
+                <input
+                  type="email"
+                  name="user-email"
+                  class="modal-input valid"
+                  placeholder=" "
+                />
+                <svg class="modal-icon-input" height="24" width="18">
+                  <use href="./images/icons.svg#email"></use>
+                </svg>
               </div>
+            </li>
 
-              <div role="group" aria-labelledby="-modal" class="modal-group">
-                <label for="comment" class="modal-lable">Comment</label>
-                <textarea
-                  class="modal-textarea modal-input"
-                  name="comment"
-                  id="comment"
-                  placeholder="Text input"
-                ></textarea>
-              </div>
-            </div>
+            <li class="modal-group">
+              <label for="comment" class="modal-lable">Comment</label>
+              <textarea
+                class="modal-textarea modal-input"
+                name="comment"
+                id="comment"
+                placeholder="Text input"
+              ></textarea>
+            </li>
 
-            <div role="group" aria-labelledby="-modal" class="modal-conf">
+            <li class="modal-checkbox-li modal-conf modal-group">
               <input
                 type="checkbox"
                 name="confirmation"
                 id="confirmation"
-                class="modal-checkbox"
+                class="modal-checkbox vsibility-hidden"
               />
               <label for="confirmation" class="modal-l-check"
-                >I accept the terms and conditions of the
-                <a href="">Privacy Policy</a>
+                >I accept the terms and conditions of the&#8194;<a
+                  href=""
+                  class="modal-link"
+                  noopener
+                  noreferrer
+                  >Privacy Policy</a
+                >
               </label>
-            </div>
+              <svg class="svg-conf" height="10" width="10">
+                <use href="/images/icons.svg#chek-mark"></use>
+              </svg>
+            </li>
 
-            <button type="submit" class="modal-sub-button">Send</button>
-          </form>
-        </div>
+            <li class="modal-button-li modal-group">
+              <button type="submit" class="modal-sub-button">Send</button>
+            </li>
+          </ul>
+        </form>
       </div>
     </div>
 

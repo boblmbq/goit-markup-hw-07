@@ -296,19 +296,36 @@ header {
 
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: background 250ms var(--time-function), border 250ms var(--time-function);
 }
+
+.modal-button:hover {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-left: auto;
+
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+
+  background: var(--color-bck-btn-act);
+  border: 1px solid var(--color-bck-btn-act);
+}
+.modal-button:hover .modal-svg{
+  fill: #fff;
+}
+
 
 .modal-svg {
   height: 8px;
   width: 8px;
+transition: fill 250ms var(--time-function);
 }
-
-.header-email {
-}
-
-.header-tel {
-}
-
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -316,9 +333,6 @@ header {
 }
 
 /* ------------------------------First Section Style----------------------------- */
-
-.container-section-one {
-}
 
 .same-background {
   background-color: var(--color-tit-back);
@@ -390,12 +404,7 @@ header {
   cursor: pointer;
 }
 
-/* button[type="button"] {
-     color: var(--color-fnt-btn-act);
-     background-color: var(--color-font-logo);
-} */
-
-/* ----------------------------second section Style------------------------- */
+/* TODO ----------------------------second section Style------------------------- */
 
 .section-two {
   padding-top: 120px;
@@ -949,10 +958,13 @@ ul button[type='button'].btn:active {
 }
 
 .input-group {
-  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .modal-titile {
+  margin-top: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -960,8 +972,14 @@ ul button[type='button'].btn:active {
   letter-spacing: 0.02em;
   color: inherit;
 }
-.modal-group:not(:last-child) {
+.modal-group:not(modal-checkbox) {
   margin-bottom: 8px;
+}
+.modal-group:nth-last-child(3) {
+  margin-bottom: 16px;
+}
+.modal-group:nth-last-child(2) {
+  margin-bottom: 24px;
 }
 
 .div-input-ico {
@@ -990,7 +1008,7 @@ ul button[type='button'].btn:active {
 .modal-input {
   width: 360px;
   height: 40px;
-  
+
   padding-left: 36px;
 
   border: 1px solid rgba(46, 47, 66, 0.2);
@@ -999,18 +1017,21 @@ ul button[type='button'].btn:active {
   transition: border 250ms var(--time-function);
 }
 
-.modal-input:focus{
-border: 1px solid var(--color-font-logo);
+.modal-input:focus {
+  border: 1px solid var(--color-font-logo);
 }
 
-.modal-input:focus + .modal-icon-input{
-  fill: var(--color-font-logo); 
+.modal-input:focus + .modal-icon-input {
+  fill: var(--color-font-logo);
 }
 
 .modal-textarea {
   resize: none;
   width: 360px;
   height: 120px;
+
+  color: black;
+  font-size: 12px;
 
   padding-top: 8px;
   padding-bottom: 8px;
@@ -1036,13 +1057,58 @@ border: 1px solid var(--color-font-logo);
 }
 
 .modal-l-check {
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
+.vsibility-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.modal-checkbox-li{
+  position: relative;
+}
+.modal-l-check::before {
+  content: '';
+  display: flex;
+  position: relative;
+  justify-content: center;
+  position: relative;
+  padding: 4px 3px;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid #2e2f42;
+  cursor: pointer;
 
+  transition: background-color 250ms var(--time-function);
+}
+.svg-conf {
+  /* opacity: 0; */
+  position: absolute;
+  left: 3px;
+  top: 24%;
+  fill: #fff;
+}
+.modal-checkbox:checked + .modal-l-check::before {
+  background-color: var(--color-bck-btn-act);
+}
+
+.modal-link {
+  color: var(--color-font-logo);
+  font-size: 12px;
+  line-height: 1.33;
+}
 .modal-sub-button {
   position: relative;
 
@@ -1059,7 +1125,6 @@ border: 1px solid var(--color-font-logo);
   background-color: var(--color-font-logo);
   border: none;
   border-radius: 4px;
-  border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   transition: background-color 250ms var(--time-function),
@@ -1070,4 +1135,16 @@ border: 1px solid var(--color-font-logo);
   background-color: var(--color-bck-btn-act);
   transform: translateY(-3px);
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+}
+.valid:not(:placeholder-shown):valid {
+  border: 1px solid green;
+}
+.valid:not(:placeholder-shown):valid + .modal-icon-input {
+  fill: green;
+}
+.valid:not(:placeholder-shown):invalid {
+  border: 1px solid red;
+}
+.valid:not(:placeholder-shown):invalid + .modal-icon-input {
+  fill: red;
 }
