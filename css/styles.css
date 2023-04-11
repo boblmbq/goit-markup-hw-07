@@ -928,12 +928,28 @@ ul button[type='button'].btn:active {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.modal-format{
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 24px 0;
+/* TODO ---------------------modla win------------------------ */
 
+.modal-format {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.modal-form {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 16px;
+
+  height: 100%;
+}
+
+.input-group {
+  margin-bottom: 16px;
 }
 
 .modal-titile {
@@ -943,4 +959,115 @@ padding: 24px 0;
   text-align: center;
   letter-spacing: 0.02em;
   color: inherit;
+}
+.modal-group:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.div-input-ico {
+  position: relative;
+}
+
+.modal-icon-input {
+  position: absolute;
+  left: 16px;
+  top: 8px;
+  bottom: 8px;
+
+  transition: fill 250ms var(--time-function);
+}
+
+.modal-lable {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+}
+
+.modal-input {
+  width: 360px;
+  height: 40px;
+  
+  padding-left: 36px;
+
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  border-radius: 4px;
+
+  transition: border 250ms var(--time-function);
+}
+
+.modal-input:focus{
+border: 1px solid var(--color-font-logo);
+}
+
+.modal-input:focus + .modal-icon-input{
+  fill: var(--color-font-logo); 
+}
+
+.modal-textarea {
+  resize: none;
+  width: 360px;
+  height: 120px;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  border-radius: 4px;
+}
+.modal-textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-conf {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.modal-l-check {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.modal-sub-button {
+  position: relative;
+
+  display: block;
+  min-width: 169px;
+  height: 56px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-fnt-btn-act);
+
+  background-color: var(--color-font-logo);
+  border: none;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms var(--time-function),
+    transform 250ms var(--time-function), box-shadow 250ms var(--time-function);
+}
+.modal-sub-button:hover,
+.modal-sub-button:focus {
+  background-color: var(--color-bck-btn-act);
+  transform: translateY(-3px);
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
 }

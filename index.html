@@ -495,8 +495,8 @@
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
-      is-hidden
+      
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-button" data-modal-close>
           <svg class="modal-svg">
@@ -515,32 +515,75 @@
           </h1>
 
           <form class="modal-form" name="customer-information">
-            <div role="group" aria-labelledby="name-details-modal">
-              <label for="user-name">Name</label>
-              <input type="text" name="user-name" />
+            <div class="input-group">
+              <div
+                role="group"
+                aria-labelledby="name-details-modal"
+                class="modal-group"
+              >
+                <label for="user-name" class="modal-lable">Name</label>
+
+                <div class="div-input-ico">
+                  <input type="text" name="user-name" class="modal-input" />
+                  <svg class="modal-icon-input" height="24" width="18">
+                    <use href="./images/icons.svg#name"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div
+                role="group"
+                aria-labelledby="telnum-details-modal"
+                class="modal-group"
+              >
+                <label for="user-tel" class="modal-lable">Phone</label>
+                <div class="div-input-ico">
+                  <input type="email" name="user-email" class="modal-input" />
+                  <svg class="modal-icon-input" height="24" width="18">
+                    <use href="./images/icons.svg#tel"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div
+                role="group"
+                aria-labelledby="email-details-modal"
+                class="modal-group"
+              >
+                <label for="user-email" class="modal-lable">Email</label>
+                <div class="div-input-ico">
+                  <input type="email" name="user-email" class="modal-input" />
+                  <svg class="modal-icon-input" height="24" width="18">
+                    <use href="./images/icons.svg#email"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div role="group" aria-labelledby="-modal" class="modal-group">
+                <label for="comment" class="modal-lable">Comment</label>
+                <textarea
+                  class="modal-textarea modal-input"
+                  name="comment"
+                  id="comment"
+                  placeholder="Text input"
+                ></textarea>
+              </div>
             </div>
 
-            <div role="group" aria-labelledby="tel-num-details-modal">
-              <label for="user-tel">Phone</label>
-              <input type="tel" name="user-tel" />
+            <div role="group" aria-labelledby="-modal" class="modal-conf">
+              <input
+                type="checkbox"
+                name="confirmation"
+                id="confirmation"
+                class="modal-checkbox"
+              />
+              <label for="confirmation" class="modal-l-check"
+                >I accept the terms and conditions of the
+                <a href="">Privacy Policy</a>
+              </label>
             </div>
 
-            <div role="group" aria-labelledby="email-details-modal">
-              <label for="user-email">Email</label>
-              <input type="email" name="user-email" />
-            </div>
-
-            <div role="group" aria-labelledby="-modal">
-              <label for="">Comment</label>
-              <input type="text" name="comment" />
-            </div>
-
-            <!-- <div role="group" aria-labelledby="-modal">
-            <label for="confirmation"></label>
-            <input type="text" name="confirmation" />
-          </div>
-
-          <button type="submit">Send</button> -->
+            <button type="submit" class="modal-sub-button">Send</button>
           </form>
         </div>
       </div>
