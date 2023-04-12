@@ -13,6 +13,8 @@
   --time-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
 :active,
 :hover,
 :focus {
@@ -258,8 +260,11 @@ header {
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%);
   transition: transform 1s linear;
+  animation-name: modalOpen;
+  animation-duration: 250ms;
+  animation-timing-function: var(--time-function);
 }
 
 .modal {
@@ -297,7 +302,8 @@ header {
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  transition: background 250ms var(--time-function), border 250ms var(--time-function);
+  transition: background 250ms var(--time-function),
+    border 250ms var(--time-function);
 }
 
 .modal-button:hover {
@@ -316,15 +322,14 @@ header {
   background: var(--color-bck-btn-act);
   border: 1px solid var(--color-bck-btn-act);
 }
-.modal-button:hover .modal-svg{
+.modal-button:hover .modal-svg {
   fill: #fff;
 }
-
 
 .modal-svg {
   height: 8px;
   width: 8px;
-transition: fill 250ms var(--time-function);
+  transition: fill 250ms var(--time-function);
 }
 .is-hidden {
   opacity: 0;
@@ -1056,7 +1061,20 @@ ul button[type='button'].btn:active {
   margin-bottom: 24px;
 }
 
+.modal-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+}
+
 .modal-l-check {
+  padding-left: 24px;
+}
+
+.modal-checkbox-li {
+  position: relative;
+
   display: flex;
   align-items: center;
   font-weight: 400;
@@ -1065,43 +1083,40 @@ ul button[type='button'].btn:active {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
-.vsibility-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-}
-.modal-checkbox-li{
-  position: relative;
-}
-.modal-l-check::before {
-  content: '';
-  display: flex;
-  position: relative;
-  justify-content: center;
-  position: relative;
-  padding: 4px 3px;
-  margin-right: 8px;
-  width: 16px;
-  height: 16px;
-  border-radius: 2px;
-  border: 1px solid #2e2f42;
-  cursor: pointer;
 
+.chek-box {
+  position: absolute;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #2e2f42;
+  border-radius: 4px;
+
+  cursor: pointer;
   transition: background-color 250ms var(--time-function);
 }
-.svg-conf {
-  /* opacity: 0; */
+
+.svg-mark {
   position: absolute;
-  left: 3px;
-  top: 24%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   fill: #fff;
+
+  transition: visibility 250ms var(--time-function),
+    opacity 250ms var(--time-function);
 }
-.modal-checkbox:checked + .modal-l-check::before {
-  background-color: var(--color-bck-btn-act);
+.modal-checkbox:checked + .chek-box {
+  background-color: #404bbf;
+}
+.modal-checkbox:checked + .chek-box .svg-mark {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: none;
 }
 
 .modal-link {

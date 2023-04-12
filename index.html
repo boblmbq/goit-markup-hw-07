@@ -573,14 +573,20 @@
             </li>
 
             <li class="modal-checkbox-li modal-conf modal-group">
-              <input
-                type="checkbox"
-                name="confirmation"
-                id="confirmation"
-                class="modal-checkbox vsibility-hidden"
-              />
-              <label for="confirmation" class="modal-l-check"
-                >I accept the terms and conditions of the&#8194;<a
+              <label for="confirmation" class="modal-l-check">
+                <input
+                  type="checkbox"
+                  name="confirmation"
+                  id="confirmation"
+                  class="modal-checkbox"
+                />
+                <span class="chek-box">
+                  <svg class="svg-mark" height="8" width="10">
+                    <use href="./images/icons.svg#chek-mark"></use>
+                  </svg>
+                </span>
+
+                I accept the terms and conditions of the&#8194;<a
                   href=""
                   class="modal-link"
                   noopener
@@ -588,9 +594,6 @@
                   >Privacy Policy</a
                 >
               </label>
-              <svg class="svg-conf" height="10" width="10">
-                <use href="/images/icons.svg#chek-mark"></use>
-              </svg>
             </li>
 
             <li class="modal-button-li modal-group">
