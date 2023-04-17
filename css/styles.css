@@ -64,7 +64,7 @@ body {
 }
 
 section {
-  /* outline: 2px dashed tomato; */
+  border: 1px dashed tomato;
 }
 
 img {
@@ -96,10 +96,6 @@ header {
   display: flex;
   align-items: center;
 }
-
-.header-abov {
-}
-
 .container-nav a {
   display: block;
   padding-bottom: 24px;
@@ -448,7 +444,7 @@ header {
 }
 
 .list-section-two {
-  display: flex;
+  /* display: flex; */
 }
 
 /* h123 style */
@@ -493,7 +489,6 @@ header {
 .container-three .list {
   display: flex;
   gap: 24px;
-  /* justify-content: space-between; */
 }
 
 .container-three > h2 {
@@ -514,8 +509,8 @@ header {
 }
 
 .list-team {
-  display: flex;
-  gap: 24px;
+  /* display: flex;
+  gap: 24px; */
 }
 
 .headline-four {
