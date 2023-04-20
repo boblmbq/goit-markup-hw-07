@@ -1,4 +1,19 @@
 @media screen and (max-width: 480px) {
+  .first-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  .section-one {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    max-width: 320px;
+    margin-bottom: 72px;
+  }
+
   .wrraper {
     max-width: 480px;
   }
@@ -66,5 +81,36 @@
   }
   .section-five-item {
     flex-basis: calc((100% - 2 * 16px) / 2);
+  }
+
+  /* TODO ----------------footer------------------ */
+
+  .container-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo-text,
+  .footer-logo-text + div {
+    margin-bottom: 72px;
+  }
+
+  .footer-input-main {
+    max-width: 82vw;
+  }
+
+  .footer-input-style {
+    width: 100%;
+  }
+
+  .footer-form {
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
   }
 }
