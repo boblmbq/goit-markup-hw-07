@@ -1,4 +1,20 @@
 @media screen and (max-width: 480px) {
+  /* TODO -----------------header----------- */
+  .container-nav {
+    position: relative;
+  }
+  .mob-frst-btt {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: transparent;
+    margin-left: auto;
+    position: absolute;
+    right: 16px;
+  }
+
   .first-section {
     padding-top: 112px;
     padding-bottom: 112px;
@@ -93,6 +109,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .footer-logo-text,
@@ -101,7 +118,8 @@
   }
 
   .footer-input-main {
-    max-width: 82vw;
+    max-width: 100%;
+    margin-bottom: 16px;
   }
 
   .footer-input-style {
@@ -111,6 +129,18 @@
   .footer-form {
     flex-direction: column;
     align-items: center;
-    width: max-content;
+    width: 100%;
+  }
+  footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .footer-input-style {
+  }
+
+  .header-container.list,
+  .header-adds.address {
+    display: none;
   }
 }
