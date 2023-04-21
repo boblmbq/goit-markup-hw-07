@@ -1,7 +1,5 @@
 .footer-input-style {
- 
 }
-
 
 .header-container .current-page::after {
   display: flex;
@@ -63,4 +61,55 @@
 
 .address {
   margin-left: auto;
+}
+
+.container-nav a {
+  display: block;
+  padding-bottom: 24px;
+  padding-top: 24px;
+
+  color: var(--color-tit-back);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address .link {
+  font-style: normal;
+  text-decoration: none;
+  color: var(--color-ads-txt);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  transition: color 250ms var(--time-function);
+}
+.address {
+  font-style: normal;
+  margin-left: auto;
+}
+
+.list-adds > li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.address .link {
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms var(--time-function);
 }
