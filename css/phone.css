@@ -32,7 +32,7 @@
     max-width: 320px;
     margin-bottom: 72px;
   }
-  /* ? --------------mb nav style-------------- */
+  /* ? --------------mob nav style-------------- */
   .js-menu-container {
     position: fixed;
     top: 0;
@@ -41,6 +41,7 @@
     justify-content: space-between;
 
     width: 100vw;
+    height: 100dvh;
     height: 100vh;
 
     background-color: #fff;
