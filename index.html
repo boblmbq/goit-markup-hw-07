@@ -43,7 +43,13 @@
             >Web<span class="header-logo-std">Studio</span></a
           >
 
-          <button type="button" class="mob-frst-btt">
+          <button
+            type="button"
+            class="mob-frst-btt js-open-menu"
+            aria-expanded="false"
+            aria-controls="mob-nav"
+            data-modal-open
+          >
             <svg height="40" width="40" class="svg-mob-first">
               <use href="./images/icons.svg#menu"></use>
             </svg>
@@ -82,9 +88,13 @@
       </div>
       <!--TODO ------------------------mob navigation container --------------->
 
-      <div class="mob-nav">
-        <div class="mob-nav-wrraper">
-          <button type="button" class="mob-button">
+      <div class="js-menu-container is-hidden" data-modal>
+        <div class="mob-nav-wrraper mob-nav">
+          <button
+            type="button"
+            class="mob-button js-close-menu"
+            data-modal-close
+          >
             <svg class="modal-svg">
               <use
                 class="modal-close"
@@ -696,5 +706,6 @@
     </div>
 
     <script src="./folder.js/modal.js"></script>
+    <script src="./folder.js/mobile-menu.js"></script>
   </body>
 </html>
