@@ -1,4 +1,15 @@
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section,
+  main,
+  footer {
+    width: 100vw;
+  }
   /* TODO -----------------header----------- */
 
   .container-nav {
@@ -83,7 +94,6 @@
     display: flex;
     flex-direction: column;
     row-gap: 40px;
-
   }
   .mob-email {
     font-weight: 500;
@@ -147,23 +157,20 @@
   }
 
   .wrraper {
-    max-width: 480px;
-  }
-  .container {
-    max-width: 100%;
+    width: 100%;
   }
   .section-two {
-    max-width: 480px;
+    width: 100%;
     padding-top: 96px;
     padding-left: 16px;
     padding-right: 16px;
   }
   .container-two {
-    max-width: 100%;
+    width: 100%;
     display: flex;
   }
   .list-item-two {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,6 +180,15 @@
   }
   .section-two-icon {
     display: none;
+  }
+  .list-section-two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .list-item-two{
+    
   }
   .title-sec {
     font-weight: 700;
@@ -257,7 +273,7 @@
     display: none;
   }
 
-  .backdrop{
+  .backdrop {
     padding-left: 18px;
     padding-right: 18px;
   }
