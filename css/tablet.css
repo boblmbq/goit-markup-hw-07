@@ -8,11 +8,9 @@
   }
   /* ?------------------------closing the mob menu */
 
-  /*! ---------------------------comment sec 3 */
-  .section-three {
-    display: none;
-  }
-  /* !---------------------------comment sec 3 */
+  /*! ---------------------------comment sec 3 ------------------------*/
+
+  /* !---------------------------comment sec 3 -------------------------*/
 
   /*TODO -----------------------------------Container-----------------------------  */
   .container {
@@ -74,9 +72,7 @@
   }
   .header-navigation .list {
     display: flex;
-  }
-  .header-navigation li:not(:last-child) {
-    margin-right: 40px;
+    gap: 40px;
   }
   .address {
     margin-left: auto;
@@ -113,9 +109,6 @@
     font-style: normal;
     margin-left: auto;
   }
-  .list-adds {
-    flex-direction: column;
-  }
 
   .address .link {
     font-style: normal;
@@ -129,75 +122,36 @@
   }
   /*!  ---------------------Header --------------------------*/
 
-  /*TODO --------------------first-section----------------------  */
-  .first-section {
-    padding-top: 112px;
-    padding-bottom: 112px;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url('../images/bg-image.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  /*TODO --------------------first-section----------------------  */
-
   /*? --------------------section-two----------------------  */
-  .section-two-icon {
-    display: none;
-  }
-  .title-sec {
-    font-weight: 700;
-    font-size: 3.75vw;
-    font-size: 2.25em;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    margin-right: auto;
-    margin-left: auto;
-  }
+
   .section-two {
     padding-top: 96px;
     padding-bottom: 96px;
   }
-  .section-two p {
-    font-weight: 500;
-    font-size: 1.89vw;
-  }
   .list-section-two {
     display: flex;
-    flex-wrap: wrap;
-    row-gap: 72px;
-    column-gap: 24px;
-  }
-
-  .list-item-two {
-    flex-basis: calc((100% - 24px) / 2);
   }
 
   /*? --------------------section-two----------------------  */
   /*! --------------------container four----------------------  */
   .list-team {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     row-gap: 64px;
     column-gap: 24px;
   }
   /*! --------------------container four----------------------  */
+
   /*? -----------------section-five------------------------------- */
   .section-five-list {
-    justify-content: center;
     display: flex;
-    flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 72px;
   }
   .section-five-item {
     flex-basis: calc((100% - 24px) / 4);
   }
   /*? -----------------section-five------------------------------- */
+
   /*! -----------------footer------------------------------- */
   footer {
     padding-top: 96px;
@@ -216,10 +170,62 @@
   .footer-logo-text {
     margin-right: 24px;
   }
- .footer-input-main{
-  width: 264px;
-  margin-right: 24px;
- }
-
+  .footer-input-main {
+    width: 264px;
+    margin-right: 24px;
+  }
   /*! -----------------footer------------------------------- */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .section-three {
+    display: none;
+  }
+  .list-adds {
+    flex-direction: column;
+  }
+
+  /*TODO --------------------first-section----------------------  */
+  .first-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/bg-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  /*TODO --------------------first-section----------------------  */
+  .list-item-two {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .title-sec {
+    font-weight: 700;
+    font-size: 3.75vw;
+    font-size: 2.25em;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .section-two p {
+    font-weight: 500;
+    font-size: 1.89vw;
+  }
+  .list-section-two {
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .list-team {
+    flex-wrap: wrap;
+  }
+  .section-five-list {
+    row-gap: 72px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
