@@ -1,0 +1,7 @@
+.list-adds > li:not(:last-child) {
+    margin-right: 40px;
+  }
+
+    .list-item-two:not(:last-child) {
+    margin-right: 24px;
+  }

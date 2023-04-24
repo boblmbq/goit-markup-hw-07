@@ -90,8 +90,12 @@ header {
   display: flex;
   align-items: center;
 }
-.container-nav a {
+
+.container-nav nav a {
   display: block;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   color: var(--color-tit-back);
   font-weight: 500;
@@ -359,10 +363,6 @@ header {
 
 
 
-.list-section-two {
-  /* display: flex; */
-}
-
 /* h123 style */
 .heading {
   color: var(--color-tit-back);
@@ -389,7 +389,7 @@ header {
 .desc {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-ads-txt);
 }
