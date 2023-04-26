@@ -111,11 +111,7 @@ header {
 .header-navigation li > a:hover,
 .header-navigation li > a:focus {
   color: var(--color-bck-btn-act);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-decoration: none;
+
 }
 
 .header-navigation .header-logo {
@@ -158,10 +154,6 @@ header {
   font-style: normal;
   text-decoration: none;
   color: var(--color-bck-btn-act);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 .backdrop {

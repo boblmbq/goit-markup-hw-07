@@ -108,7 +108,7 @@
     color: #2e2f42;
     transition: color 250ms var(--time-function);
   }
-  .mob-header-container li:hover a {
+  .mob-header-container li:hover:not(.mob-email, .mob-tel) a {
     color: var(--color-bck-btn-act);
   }
 
