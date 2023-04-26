@@ -18,21 +18,31 @@
   .list-section-two li p {
     width: 264px;
   }
-  .section-two{
+  .section-two {
     padding-top: 120px;
     padding-bottom: 120px;
   }
   .section-three {
     padding-top: 120px;
   }
-  footer{
+  footer {
     padding-top: 100px;
     padding-bottom: 100px;
   }
-  .footer-logo-text{
+  .footer-logo-text {
     margin-right: 120px;
   }
-  .footer-icon{
+  .footer-icon {
     margin-right: 80px;
+  }
+  .address .link {
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms var(--time-function);
   }
 }

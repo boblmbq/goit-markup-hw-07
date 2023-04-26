@@ -77,6 +77,7 @@
   .address-link:first-child {
     margin-bottom: 12px;
   }
+
   .container-nav a {
     display: block;
 
@@ -93,13 +94,11 @@
   }
 
   .address .link {
-    font-style: normal;
-    text-decoration: none;
-    color: var(--color-ads-txt);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+
     transition: color 250ms var(--time-function);
   }
   .address {
@@ -107,16 +106,7 @@
     margin-left: auto;
   }
 
-  .address .link {
-    font-style: normal;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
 
-    transition: color 250ms var(--time-function);
-  }
   /*!  ---------------------Header --------------------------*/
 
   /*? --------------------section-two----------------------  */
