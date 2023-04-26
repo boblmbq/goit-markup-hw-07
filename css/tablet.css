@@ -137,6 +137,7 @@
     row-gap: 64px;
     column-gap: 24px;
   }
+
   /*! --------------------container four----------------------  */
 
   /*? -----------------section-five------------------------------- */
@@ -147,6 +148,7 @@
   .section-five-item {
     flex-basis: calc((100% - 24px) / 4);
   }
+
   /*? -----------------section-five------------------------------- */
 
   /*! -----------------footer------------------------------- */
@@ -172,6 +174,14 @@
   }
   .list-adds {
     flex-direction: column;
+  }
+  .section-four {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .section-five {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .container-footer {
     display: flex;
