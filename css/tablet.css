@@ -7,14 +7,11 @@
     display: none;
   }
   /* ?------------------------closing the mob menu */
-
-  /*! ---------------------------comment sec 3 ------------------------*/
-
-  /* !---------------------------comment sec 3 -------------------------*/
-
   /*TODO -----------------------------------Container-----------------------------  */
   .container {
-    width: 100%;
+    max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   /* TODO -----------------------------------Container-----------------------------  */
 
@@ -158,18 +155,10 @@
     padding-bottom: 96px;
     padding-right: 108px;
     padding-left: 108px;
-  }
-  .container-footer {
     display: flex;
-    flex-wrap: wrap;
-    row-gap: 72px;
-    column-gap: 24px;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
-  .footer-logo-text {
-    margin-right: 24px;
-  }
+
   .footer-input-main {
     width: 264px;
     margin-right: 24px;
@@ -183,6 +172,16 @@
   }
   .list-adds {
     flex-direction: column;
+  }
+  .container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+    max-width: 552px;
+  }
+  .footer-logo-text {
+    margin-right: 24px;
   }
 
   /*TODO --------------------first-section----------------------  */
@@ -204,7 +203,6 @@
   }
   .title-sec {
     font-weight: 700;
-    font-size: 3.75vw;
     font-size: 2.25em;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -213,7 +211,7 @@
   }
   .section-two p {
     font-weight: 500;
-    font-size: 1.89vw;
+    font-size: 1em;
   }
   .list-section-two {
     flex-wrap: wrap;
