@@ -584,7 +584,7 @@ footer {
 }
 
 .footer-logo-text {
-  /* margin-right: 120px; */
+  min-width: 264px;
 }
 
 .footer-icon-text {
