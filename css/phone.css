@@ -25,9 +25,14 @@
   /*! -----------------MODAL-MOBILE-------------------  */
   /* TODO -----------------header----------- */
 
+  header {
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
   .container-nav {
     position: relative;
   }
+
   .mob-frst-btt {
     margin-left: auto;
     display: flex;
@@ -301,10 +306,33 @@
     max-width: 100%;
   }
   /* !-----------------------only input------------------- */
+
+  .section-port {
+    padding-top: 48px;
+  }
+  .list-port {
+    flex-wrap: wrap;
+    gap: 24px 16px;
+    justify-content: start;
+    margin-bottom: 48px;
+  }
+
+  .list-produckt {
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+  }
+  .img-port{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1157px) {
   .section-two-icon {
     display: none;
   }
+  .overlay-text-wrraper {
+  display: none;
+  }
 }
+

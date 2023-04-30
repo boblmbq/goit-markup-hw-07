@@ -106,7 +106,6 @@
     margin-left: auto;
   }
 
-
   /*!  ---------------------Header --------------------------*/
 
   /*? --------------------section-two----------------------  */
@@ -225,5 +224,10 @@
     row-gap: 72px;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .list-produckt {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
   }
 }

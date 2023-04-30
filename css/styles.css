@@ -720,9 +720,7 @@ footer {
   margin-bottom: 72px;
 }
 
-.list-port li:not(:last-child) {
-  margin-right: 24px;
-}
+
 
 ul button[type='button'].btn {
   font-family: inherit;
@@ -785,24 +783,6 @@ ul button[type='button'].btn:active {
   transform: translateY(0);
 }
 
-.overlay-text-wrraper {
-  position: absolute;
-
-  left: 0;
-  top: 0;
-
-  width: 100%;
-  height: 100%;
-
-  padding-top: 40px;
-  padding-left: 32px;
-  padding-right: 32px;
-
-  background-color: var(--color-font-logo);
-
-  transform: translateY(100%);
-  transition: transform 0.25s;
-}
 
 .overlay-text {
   font-weight: 400;
@@ -810,12 +790,6 @@ ul button[type='button'].btn:active {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-bck-btn);
-}
-
-.list-produckt {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 48px 24px;
 }
 
 .desc-port {
