@@ -8,6 +8,21 @@
   footer {
     width: 100vw;
   }
+
+  /*! -----------------MODAL-MOBILE-------------------  */
+  div.js-menu-container.is-hidden {
+    opacity: 0;
+    transform: translateX(100%);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+  }
+  div.js-menu-container.is-open {
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  }
+
+  /*! -----------------MODAL-MOBILE-------------------  */
   /* TODO -----------------header----------- */
 
   .container-nav {
@@ -275,13 +290,14 @@
   }
 
   /* !-----------------------only input------------------- */
-  .modal-group{
+  .modal-group {
     max-width: 100%;
   }
-  input, textarea{
+  input,
+  textarea {
     max-width: 100%;
   }
-  .input-group{
+  .input-group {
     max-width: 100%;
   }
   /* !-----------------------only input------------------- */
